@@ -1,0 +1,10 @@
+services:
+    builder:
+        image: ghcr.io/whattheearl/builder:latest
+        ports:
+            - 5175:8080
+        volumes:
+            - builder:/home/jon/wte/builder/data
+
+volumes:
+    builder:
