@@ -28,6 +28,7 @@ export const createBuildTable = () => {
         output text
     )`);
 }
+createBuildTable();
 
 export function getAllBuilds() {
     const builds = db.query('SELECT * FROM builds').all() as Build[];

@@ -8,7 +8,7 @@ import { BUILDER } from "./repo/builder";
 
 const app = new Elysia()
     .use(swagger())
-    .post("/builder", async () => {
+    .post("/builds/builder", async () => {
         const uuid = Uuid();
         let build = {
             uuid,
@@ -22,7 +22,7 @@ const app = new Elysia()
 
         return build;
     })
-    .post("/jeddit", async () => {
+    .post("/builds/jeddit", async () => {
         const uuid = Uuid();
         let build = {
             uuid,
