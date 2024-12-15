@@ -1,10 +1,10 @@
 services:
-    builder:
-        image: ghcr.io/whattheearl/builder:latest
+    jithub:
+        image: ghcr.io/whattheearl/jithub:latest
         ports:
             - 5175:8080
         volumes:
-            - builder:/home/jon/wte/builder/data
+            - builder:/home/jon/wte/jithub/data
 
 volumes:
-    builder:
+    jithub:

@@ -1,3 +1,3 @@
-import { Database } from 'bun:sqlite'
+import { Database } from "bun:sqlite";
 
-export const db = new Database('/home/jon/wte/builder/data/builder_db.sqlite');
+export const db = new Database("/home/jon/wte/jithub/data/builder_db.sqlite");
