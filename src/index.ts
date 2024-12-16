@@ -8,7 +8,7 @@ import { JITHUB } from "./projects/jithub";
 
 const app = new Elysia()
     .use(swagger())
-    .post("/run/jithub", async () => {
+    .post("/projects/jithub/build", async () => {
         const uuid = Uuid();
         let build = {
             uuid,
@@ -22,7 +22,7 @@ const app = new Elysia()
 
         return build;
     })
-    .post("/run/jeddit", async () => {
+    .post("/projects/jeddit/build", async () => {
         const uuid = Uuid();
         let build = {
             uuid,
