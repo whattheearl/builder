@@ -18,7 +18,7 @@ export async function run(build: Build) {
             return;
         }
         console.log(stdout.toString());
-        build.output += output;
+        build.output += stdout.toString();
         updateBuild(build);
     }
 
@@ -36,7 +36,7 @@ export async function run(build: Build) {
             return;
         }
         console.log(stdout.toString());
-        build.output += output;
+        build.output += stdout.toString();
         updateBuild(build);
     }
 
@@ -50,7 +50,7 @@ export async function run(build: Build) {
             return;
         }
         console.log(stdout.toString());
-        build.output += output;
+        build.output += stdout.toString();
         updateBuild(build);
     }
 
@@ -64,7 +64,7 @@ export async function run(build: Build) {
             return;
         }
         console.log(stdout.toString());
-        build.output += output;
+        build.output += stdout.toString();
         updateBuild(build);
     }
 
@@ -80,7 +80,7 @@ export async function run(build: Build) {
             return;
         }
         console.log(stdout.toString());
-        build.output += output;
+        build.output += stdout.toString();
         updateBuild(build);
     }
 }
